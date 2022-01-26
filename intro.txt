@@ -1,0 +1,135 @@
+introduction:
+------------------
+frames are the browser window which the users see.
+
+each browser window is know as frames
+
+the frameset tag combines the multiple browser window or the frame in single window. or,
+
+it helps to combine multiple html documents in single window. and they are indepent to each other.
+
+whenever the <frameset> tag  is used to divide the browser window.
+body tag  is not required in it.
+
+use name attribute to give names to the frames.
+
+use src tag to give the location of attached frames.
+
+all the html documnets included in frameset tag must be in same folder or use the locTION where it is kept just like how you use the external css.
+
+if we have to show  link or website opening in different frame then we use the frame name in target so that it will display in the target frame.
+
+some attribute of frameset tag are:
+----------------------------------------------
+row : to divide the frame tag in different rows.
+column: to divide the frames into different columns.
+border : to set the border width .
+border-color: we can set the border color of the frame tags.
+names : to know which document we have to show in this row or column .
+
+examples:
+-------------
+
+rows:
+-----------------------------------------------
+<html>
+<frameset row="30%,20%">  --> in this set we divide the browser window in row giving on 30% of 100% and another 20% of 100%.
+<frame SRC="a.html">
+<frame src="b.html">
+<frame src="c.html">
+<frameset row="30%,20%,*")  ---> * specify the remaining portion of the window.
+
+
+</frameset></html>
+
+e.g for the rows
+------------------
+
+main.html
+--------------------
+<html>
+<frameset row="30%,40%,30%">
+<frame SRC="a.html">
+<frame src="b.html">
+<frame src="c.html">
+</frameset>
+</html>
+
+a.html
+---------------------
+<html>
+
+<body bgcolor="red">
+<p>binayak</p>
+</body>
+</html>
+
+b.html
+--------------------
+<body bgcolor="green">
+<p>rishab</p>
+</body>
+</html>
+
+c.html
+--------
+<body bgcolor="yellow">
+<p>pratham</p>
+</body>
+</html>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+
+columns:
+---------
+<html>
+<frameset cols="33%,33%,34%">
+<frame src="a.html">
+<frame src="b.html">
+<frame src="c.html">
+</frameset>
+</html>
+
+e.g for the columns
+------------------
+
+main.html
+--------------------
+<html>
+<frameset cols="30%,40%,30%">
+<frame SRC="a.html">
+<frame src="b.html">
+<frame src="c.html">
+</frameset>
+</html>
+
+a.html
+---------------------
+<html>
+
+<body bgcolor="red">
+<p>binayak</p>
+</body>
+</html>
+
+b.html
+--------------------
+<body bgcolor="green">
+<p>rishab</p>
+</body>
+</html>
+
+c.html
+--------
+<body bgcolor="yellow">
+<p>pratham</p>
+</body>
+</html>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
